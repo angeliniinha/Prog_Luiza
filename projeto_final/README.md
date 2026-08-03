@@ -1,22 +1,15 @@
-# [NOME DO PROJETO]
-
-> Substitua pelo nome do seu sistema. Ex: "API de Biblioteca", "API da Pizzaria do Zé".
+# API de Pizzaria
 
 API REST desenvolvida em Python com Flask e banco de dados SQLite.
 
 **Disciplina:** Programação no Desenvolvimento de Sistemas
-**Dupla:** [Nome do integrante 1] e [Nome do integrante 2]
+**Dupla:** Luiza Angelina Locatelli Loureiro
 
 ---
 
 ## 📋 Sobre o projeto
 
-Descreva em 2 ou 3 linhas o que o seu sistema gerencia.
-
-Exemplo: *Esta API gerencia uma biblioteca. É possível cadastrar autores e livros, sendo que cada livro pertence a um autor. A API permite listar, criar, atualizar, apagar e buscar registros.*
-
----
-
+Esta API gerencia os pedidos de uma pizzaria. É possível gerenciar pedidos, sabores, preços e adicionais.
 ## 🗂️ Tabelas do banco
 
 Descreva suas duas tabelas e como elas se relacionam.
