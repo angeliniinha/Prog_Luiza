@@ -1,0 +1,35 @@
+POST http://127.0.0.1:5000/categorias
+Content-Type: application/json
+{
+    "nome":"Tradicionais"
+}
+
+GET http://127.0.0.1:5000/categorias
+
+POST http://127.0.0.1:5000/pizzas
+Content-Type: application/json
+
+{
+    "nome":"Calabresa",
+    "preco":52.90,
+    "categoria_id":1
+}
+
+GET http://127.0.0.1:5000/pizzas
+
+GET http://127.0.0.1:5000/pizzas/detalhes
+
+GET http://127.0.0.1:5000/categorias/1/pizzas
+
+GET http://127.0.0.1:5000/pizzas/busca?nome=cala
+
+PUT http://127.0.0.1:5000/pizzas/1
+Content-Type: application/json
+
+{
+    "nome":"Calabresa Especial",
+    "preco":60,
+    "categoria_id":1
+}
+
+DELETE http://127.0.0.1:5000/pizzas/1
