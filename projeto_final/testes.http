@@ -1,45 +1,334 @@
-### Criar categoria
-POST http://127.0.0.1:5000/categorias
+@baseUrl = http://127.0.0.1:5000
+
+### 1 — Criar categoria Tradicionais
+POST {{baseUrl}}/categorias
 Content-Type: application/json
 
 {
     "nome": "Tradicionais"
 }
 
-### Listar categorias
-GET http://127.0.0.1:5000/categorias
+### 2 — Criar categoria Especiais
+POST {{baseUrl}}/categorias
+Content-Type: application/json
 
-### Criar pizza
-POST http://127.0.0.1:5000/pizzas
+{
+    "nome": "Especiais"
+}
+
+### 3 — Criar categoria Doces
+POST {{baseUrl}}/categorias
+Content-Type: application/json
+
+{
+    "nome": "Doces"
+}
+
+### 4 — Criar categoria Vegetarianas
+POST {{baseUrl}}/categorias
+Content-Type: application/json
+
+{
+    "nome": "Vegetarianas"
+}
+
+### 5 — Criar categoria Premium
+POST {{baseUrl}}/categorias
+Content-Type: application/json
+
+{
+    "nome": "Premium"
+}
+
+### 6 — Criar categoria Promoções
+POST {{baseUrl}}/categorias
+Content-Type: application/json
+
+{
+    "nome": "Promoções"
+}
+
+### Listar todas as categorias
+GET {{baseUrl}}/categorias
+
+### Criar pizza Calabresa
+POST {{baseUrl}}/pizzas
 Content-Type: application/json
 
 {
     "nome": "Calabresa",
-    "preco": 52.90,
+    "preco": 49.90,
+    "categoria_id": 1
+}
+### Criar pizza Mussarela
+POST {{baseUrl}}/pizzas
+Content-Type: application/json
+
+{
+    "nome": "Mussarela",
+    "preco": 47.90,
     "categoria_id": 1
 }
 
-### Listar pizzas
-GET http://127.0.0.1:5000/pizzas
+### Criar pizza Portuguesa
+POST {{baseUrl}}/pizzas
+Content-Type: application/json
 
-### Detalhes das pizzas
-GET http://127.0.0.1:5000/pizzas/detalhes
+{
+    "nome": "Portuguesa",
+    "preco": 54.90,
+    "categoria_id": 1
+}
 
-### Pizzas da categoria
-GET http://127.0.0.1:5000/categorias/1/pizzas
+### Criar pizza Frango com Catupiry
+POST {{baseUrl}}/pizzas
+Content-Type: application/json
 
-### Buscar pizza
-GET http://127.0.0.1:5000/pizzas/busca?nome=cala
+{
+    "nome": "Frango com Catupiry",
+    "preco": 56.90,
+    "categoria_id": 1
+}
 
-### Atualizar pizza
-PUT http://127.0.0.1:5000/pizzas/1
+### Criar pizza Marguerita
+POST {{baseUrl}}/pizzas
+Content-Type: application/json
+
+{
+    "nome": "Marguerita",
+    "preco": 51.90,
+    "categoria_id": 1
+}
+
+### Criar pizza Quatro Queijos
+POST {{baseUrl}}/pizzas
+Content-Type: application/json
+
+{
+    "nome": "Quatro Queijos",
+    "preco": 62.90,
+    "categoria_id": 2
+}
+
+### Criar pizza Bacon com Cheddar
+POST {{baseUrl}}/pizzas
+Content-Type: application/json
+
+{
+    "nome": "Bacon com Cheddar",
+    "preco": 64.90,
+    "categoria_id": 2
+}
+
+### Criar pizza Strogonoff de Frango
+POST {{baseUrl}}/pizzas
+Content-Type: application/json
+
+{
+    "nome": "Strogonoff de Frango",
+    "preco": 66.90,
+    "categoria_id": 2
+}
+
+### Criar pizza Carne Seca
+POST {{baseUrl}}/pizzas
+Content-Type: application/json
+
+{
+    "nome": "Carne Seca com Catupiry",
+    "preco": 68.90,
+    "categoria_id": 2
+}
+
+### Criar pizza Chocolate
+POST {{baseUrl}}/pizzas
+Content-Type: application/json
+
+{
+    "nome": "Chocolate",
+    "preco": 45.90,
+    "categoria_id": 3
+}
+
+### Criar pizza Chocolate com Morango
+POST {{baseUrl}}/pizzas
+Content-Type: application/json
+
+{
+    "nome": "Chocolate com Morango",
+    "preco": 52.90,
+    "categoria_id": 3
+}
+
+### Criar pizza Banana com Canela
+POST {{baseUrl}}/pizzas
+Content-Type: application/json
+
+{
+    "nome": "Banana com Canela",
+    "preco": 44.90,
+    "categoria_id": 3
+}
+
+### Criar pizza Nutella com Morango
+POST {{baseUrl}}/pizzas
+Content-Type: application/json
+
+{
+    "nome": "Nutella com Morango",
+    "preco": 64.90,
+    "categoria_id": 3
+}
+
+### Criar pizza Vegetariana
+POST {{baseUrl}}/pizzas
+Content-Type: application/json
+
+{
+    "nome": "Vegetariana",
+    "preco": 54.90,
+    "categoria_id": 4
+}
+
+### Criar pizza Palmito
+POST {{baseUrl}}/pizzas
+Content-Type: application/json
+
+{
+    "nome": "Palmito",
+    "preco": 56.90,
+    "categoria_id": 4
+}
+
+### Criar pizza Brócolis com Queijo
+POST {{baseUrl}}/pizzas
+Content-Type: application/json
+
+{
+    "nome": "Brócolis com Queijo",
+    "preco": 57.90,
+    "categoria_id": 4
+}
+
+### Criar pizza Rúcula com Tomate Seco
+POST {{baseUrl}}/pizzas
+Content-Type: application/json
+
+{
+    "nome": "Rúcula com Tomate Seco",
+    "preco": 59.90,
+    "categoria_id": 4
+}
+
+### Criar pizza Camarão
+POST {{baseUrl}}/pizzas
+Content-Type: application/json
+
+{
+    "nome": "Camarão",
+    "preco": 84.90,
+    "categoria_id": 5
+}
+
+### Criar pizza Filé Mignon
+POST {{baseUrl}}/pizzas
+Content-Type: application/json
+
+{
+    "nome": "Filé Mignon com Cheddar",
+    "preco": 79.90,
+    "categoria_id": 5
+}
+
+### Criar pizza Salmão
+POST {{baseUrl}}/pizzas
+Content-Type: application/json
+
+{
+    "nome": "Salmão com Cream Cheese",
+    "preco": 89.90,
+    "categoria_id": 5
+}
+
+### Criar pizza Burrata
+POST {{baseUrl}}/pizzas
+Content-Type: application/json
+
+{
+    "nome": "Burrata com Parma",
+    "preco": 82.90,
+    "categoria_id": 5
+}
+
+### Criar pizza Calabresa Promocional
+POST {{baseUrl}}/pizzas
+Content-Type: application/json
+
+{
+    "nome": "Calabresa Promocional",
+    "preco": 39.90,
+    "categoria_id": 6
+}
+
+### Criar pizza Mussarela Promocional
+POST {{baseUrl}}/pizzas
+Content-Type: application/json
+
+{
+    "nome": "Mussarela Promocional",
+    "preco": 37.90,
+    "categoria_id": 6
+}
+
+### Criar pizza Frango Promocional
+POST {{baseUrl}}/pizzas
+Content-Type: application/json
+
+{
+    "nome": "Frango Promocional",
+    "preco": 42.90,
+    "categoria_id": 6
+}
+
+### Listar todas as pizzas
+GET {{baseUrl}}/pizzas
+
+### Listar pizzas com suas categorias
+GET {{baseUrl}}/pizzas/detalhes
+
+### Listar pizzas tradicionais
+GET {{baseUrl}}/categorias/1/pizzas
+
+### Listar pizzas especiais
+GET {{baseUrl}}/categorias/2/pizzas
+
+### Listar pizzas doces
+GET {{baseUrl}}/categorias/3/pizzas
+
+### Listar pizzas vegetarianas
+GET {{baseUrl}}/categorias/4/pizzas
+
+### Listar pizzas premium
+GET {{baseUrl}}/categorias/5/pizzas
+
+### Listar pizzas em promoção
+GET {{baseUrl}}/categorias/6/pizzas
+
+### Buscar pizza por parte do nome
+GET {{baseUrl}}/pizzas/busca?nome=chocolate
+
+### Buscar pizza Calabresa
+GET {{baseUrl}}/pizzas/busca?nome=calabresa
+
+### Atualizar a pizza de ID 1
+PUT {{baseUrl}}/pizzas/1
 Content-Type: application/json
 
 {
     "nome": "Calabresa Especial",
-    "preco": 60,
-    "categoria_id": 1
+    "preco": 55.90,
+    "categoria_id": 2
 }
 
-### Excluir pizza
-DELETE http://127.0.0.1:5000/pizzas/1
+### Excluir a pizza de ID 1
+DELETE {{baseUrl}}/pizzas/1
