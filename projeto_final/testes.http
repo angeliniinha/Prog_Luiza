@@ -1,35 +1,45 @@
+### Criar categoria
 POST http://127.0.0.1:5000/categorias
 Content-Type: application/json
+
 {
-    "nome":"Tradicionais"
+    "nome": "Tradicionais"
 }
 
+### Listar categorias
 GET http://127.0.0.1:5000/categorias
 
+### Criar pizza
 POST http://127.0.0.1:5000/pizzas
 Content-Type: application/json
 
 {
-    "nome":"Calabresa",
-    "preco":52.90,
-    "categoria_id":1
+    "nome": "Calabresa",
+    "preco": 52.90,
+    "categoria_id": 1
 }
 
+### Listar pizzas
 GET http://127.0.0.1:5000/pizzas
 
+### Detalhes das pizzas
 GET http://127.0.0.1:5000/pizzas/detalhes
 
+### Pizzas da categoria
 GET http://127.0.0.1:5000/categorias/1/pizzas
 
+### Buscar pizza
 GET http://127.0.0.1:5000/pizzas/busca?nome=cala
 
+### Atualizar pizza
 PUT http://127.0.0.1:5000/pizzas/1
 Content-Type: application/json
 
 {
-    "nome":"Calabresa Especial",
-    "preco":60,
-    "categoria_id":1
+    "nome": "Calabresa Especial",
+    "preco": 60,
+    "categoria_id": 1
 }
 
+### Excluir pizza
 DELETE http://127.0.0.1:5000/pizzas/1
