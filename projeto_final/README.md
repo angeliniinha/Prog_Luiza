@@ -5,7 +5,7 @@
 API REST desenvolvida em Python com Flask e banco de dados SQLite.
 
 **Disciplina:** Programação no Desenvolvimento de Sistemas  
-**Dupla:** [Nome do integrante 1] e [Nome do integrante 2]
+**Dupla:** Luiza Angelina Locatelli Loureiro
 
 ---
 
