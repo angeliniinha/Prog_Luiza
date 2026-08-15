@@ -1,0 +1,39 @@
+### Listar produtos
+GET http://127.0.0.1:5000/produtos
+
+
+### Criar produto 1
+POST http://127.0.0.1:5000/produtos
+Content-Type: application/json
+
+{
+    "nome": "Teclado",
+    "preco": 80.00
+}
+
+
+### Criar produto 2
+POST http://127.0.0.1:5000/produtos
+Content-Type: application/json
+
+{
+    "nome": "Mouse",
+    "preco": 50.00
+}
+
+### Criar produto 3
+POST http://127.0.0.1:5000/produtos
+Content-Type: application/json
+
+{
+    "nome": "Monitor",
+    "preco": 700.00
+}
+
+### Testar erro sem preco
+POST http://127.0.0.1:5000/produtos
+Content-Type: application/json
+
+{
+    "nome": "Notebook"
+}
