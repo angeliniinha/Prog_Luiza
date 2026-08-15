@@ -3,12 +3,10 @@ import sqlite3
 
 app = Flask(__name__)
 
-
 def conectar():
     conexao = sqlite3.connect("loja.db")
     conexao.row_factory = sqlite3.Row
     return conexao
-
 
 def criar_tabela():
     conexao = conectar()
@@ -24,7 +22,6 @@ def criar_tabela():
     conexao.commit()
     conexao.close()
 
-
 @app.route("/produtos", methods=["GET"])
 def listar():
     conexao = conectar()
@@ -38,7 +35,6 @@ def listar():
     conexao.close()
 
     return jsonify(produtos)
-
 
 @app.route("/produtos", methods=["POST"])
 def criar():
