@@ -10,7 +10,6 @@ produtos = [
 def listar():
     return jsonify(produtos)
 
-
 @app.route("/produtos", methods=["POST"])
 def criar():
     novo = request.get_json()
@@ -21,7 +20,6 @@ def criar():
     produtos.append(novo)
 
     return jsonify(novo), 201
-
 
 if __name__ == "__main__":
     app.run(debug=True)
