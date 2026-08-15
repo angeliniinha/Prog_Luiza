@@ -4,11 +4,9 @@ app = Flask(__name__)
 
 tarefas = []
 
-
 @app.route("/tarefas", methods=["GET"])
 def listar():
     return jsonify(tarefas)
-
 
 @app.route("/tarefas", methods=["POST"])
 def criar():
@@ -20,7 +18,6 @@ def criar():
     tarefas.append(nova)
 
     return jsonify(nova), 201
-
 
 if __name__ == "__main__":
     app.run(debug=True)
